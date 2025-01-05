@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <!-- Basic SEO and Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InPage to Unicode Converter</title>
+  <meta name="description" content="Convert your InPage Urdu text into Unicode format easily using our free online tool." />
+  <meta name="keywords" content="InPage, Urdu, Unicode, converter, font converter" />
+  
+  <!-- Canonical Link -->
+  <link rel="canonical" href="https://chanchalsingh.in/inpage-to-unicode.html" />
+
+  <!-- Open Graph Data -->
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="InPage to Unicode - Free Online Converter" />
+  <meta property="og:description" content="Easily convert InPage Urdu text to Unicode with our free converter." />
+  <meta property="og:url" content="https://chanchalsingh.in/inpage-to-unicode.html" />
+  <meta property="og:site_name" content="InPage to Unicode Converter" />
+
+  <!-- Twitter Card Data -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@converterhindi" />
+
+  <!-- Inline CSS for Basic Layout (You can move this to an external stylesheet) -->
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f6f6f6;
+    }
+    header, footer {
+      background: #343a40;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 1rem;
+      background: #fff;
+    }
+    h1, h2, h4 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .iframe-wrapper {
+      text-align: center;
+      margin: 1rem 0;
+    }
+    iframe {
+      border: 1px solid #ccc;
+      width: 100%;
+      height: 400px;
+    }
+    .description {
+      margin-top: 1rem;
+      text-align: justify;
+    }
+    .button-group {
+      margin-top: 1rem;
+      text-align: center;
+    }
+    button {
+      margin: 0.25rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border: none;
+      border-radius: 3px;
+      background: #007bff;
+      color: #fff;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    textarea {
+      width: 100%;
+      height: 150px;
+      margin-top: 1rem;
+      padding: 0.5rem;
+      font-family: inherit;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      resize: vertical;
+    }
+    .ad-section {
+      text-align: center;
+      background: #eee;
+      padding: 1rem;
+      margin: 1rem 0;
+      border: 1px solid #ddd;
+    }
+    footer p {
+      margin: 0;
+    }
+    /* Responsive */
+    @media (max-width: 767px) {
+      iframe {
+        height: 300px;
+      }
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+    <h1>InPage to Unicode Converter</h1>
+  </header>
+
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Iframe Section -->
+    <div class="iframe-wrapper">
+      <!-- 
+        This iframe loads the actual InPage-to-Unicode converter page 
+        from your server at: https://chanchalsingh.in/unicodetoinpage/inpagetounicode.html
+      -->
+      <iframe
+        src="https://chanchalsingh.in/unicodetoinpage/inpagetounicode.html"
+        scrolling="yes"
+        frameborder="0"
+      ></iframe>
+    </div>
+
+    <!-- Instructions / Description -->
+    <section class="description">
+      <h2>InPage to Unicode Font Converter</h2>
+      <p>
+        Hi! This online tool converts your InPage Urdu text into a Unicode font. 
+        InPage software is often used to design Urdu newspapers and magazines, 
+        but if you need to share or send Urdu text as standard Unicode (such as 
+        in emails or online), converting it is essential. Just paste your InPage 
+        text in the box inside the converter above and click “Convert to Unicode.”
+      </p>
+      <h4>How to Use This Converter</h4>
+      <p>
+        1. Copy your Urdu text from InPage.<br />
+        2. Paste it into the upper box (inside the iframe).<br />
+        3. Click on “Convert to Unicode.”<br />
+        4. Your converted text will appear in the lower box (inside the iframe).<br />
+        5. Copy or save your Unicode text for use elsewhere.
+      </p>
+      <p><strong>Note:</strong> Always proofread your output for accuracy.</p>
+    </section>
+
+    <!-- Example Output + Action Buttons -->
+    <textarea id="unicode-output" placeholder="(Example Output Area)"></textarea>
+    <div class="button-group">
+      <button onclick="copyText()">Copy</button>
+      <button onclick="clearText()">Clear</button>
+      <button onclick="downloadTxt()">Download .txt</button>
+    </div>
+
+    <!-- Link to Symbol Cleaner -->
+    <div style="text-align:center; margin-top:1rem;">
+      <a 
+        href="https://huggingface.co/spaces/Omarrran/inpage_unicode_sign_Symbol_cleaner" 
+        target="_blank"
+        style="color:#007bff; text-decoration:none;"
+      >
+        Clean the symbols of converted text here
+      </a>
+    </div>
+
+    <!-- Optional Ad Section (remove or replace as needed) -->
+    <div class="ad-section">
+      <p>Made for the Kashmiri Writers as a gift from Haq Nawaz MAlik</p>
+    </div>
+  </div><!-- .container -->
+
+  <footer>
+    <p>&copy; 2024 - Your Website Name</p>
+  </footer>
+
+  <!-- JS for Copy, Clear, and Download -->
+  <script>
+    function copyText() {
+      const textArea = document.getElementById('unicode-output');
+      textArea.select();
+      document.execCommand('copy');
+      alert('Text copied to clipboard!');
+    }
+
+    function clearText() {
+      document.getElementById('unicode-output').value = '';
+    }
+
+    function downloadTxt() {
+      const text = document.getElementById('unicode-output').value;
+      const blob = new Blob([text], { type: 'text/plain' });
+      const anchor = document.createElement('a');
+      anchor.download = 'converted_text.txt';
+      anchor.href = window.URL.createObjectURL(blob);
+      anchor.click();
+    }
+  </script>
+</body>
+</html>
