@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact - HNM Dashboard</title>
+    <link rel="stylesheet" href="../styles.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../_static/icon.png">
+    
+  <style>
+        :root {
+            --primary: #2B3A4E;
+            --accent: #4A90E2;
+            --text: #333;
+            --background: #F8FAFB;
+        }
+
+        body.dark-mode {
+            --primary: #f8f9fa;
+            --text: #e9ecef;
+            --background: #212529;
+            --accent: #4dabf7;
+        }
+
+        .dark-mode .sidebar {
+            background: #343a40;
+            box-shadow: 2px 0 10px rgba(255,255,255,0.1);
+        }
+
+        .dark-mode-toggle {
+            position: fixed;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: var(--text);
+            transition: transform 0.3s ease;
+            z-index: 1000;
+        }
+
+        .dark-mode-toggle:hover {
+            transform: rotate(20deg);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            position: fixed;
+            top: 1rem;
+            left: 1rem;
+            z-index: 1001;
+            background: transparent;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--text);
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-btn { display: block; }
+            .sidebar {
+                left: -100%;
+                transition: left 0.3s ease;
+            }
+            .sidebar.active { left: 0; }
+        }
+    </style>
+  
+</head>
+<body>
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Dark Mode Toggle -->
+    <button class="dark-mode-toggle" id="darkModeToggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+<!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="https://haq-nawaz-malik.github.io/portfolio/transparent_graph.png" alt="HNM Logo" class="brand-logo">
+            <h1 class="brand-title">HNM Dashboard</h1>
+        </div>
+
+        <div class="sidebar-menu">
+            <div class="menu-section">
+                <h3 class="menu-title">Overview</h3>
+                <ul>
+                    <li><a href="overview/About.html" class="menu-link">About</a></li>
+                    <li><a href="overview/Activities.html" class="menu-link">Activities</a></li>
+                    <li><a href="overview/Skills.html" class="menu-link">Skills</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-section">
+                <h3 class="menu-title">Projects</h3>
+                <ul>
+                    <li><a href="Project_Dashboard/Projects.html" class="menu-link">Portfolio</a></li>
+                    <li><a href="Project_Dashboard/ideas.html" class="menu-link">Ideas</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-section">
+                <h3 class="menu-title">Connect</h3>
+                <ul>
+                    <li><a href="Connect/Profiles.html" class="menu-link">Profiles</a></li>
+                    <li><a href="Connect/Contact.html" class="menu-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="content">
+        <header class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Get in Touch</h1>
+                <p class="hero-subtitle">Let's collaborate and create something amazing</p>
+            </div>
+        </header>
+
+        <section class="contact-section">
+            <div class="contact-card">
+                <h2 class="section-title"><i class="fas fa-envelope"></i> Email</h2>
+                <p class="contact-info">
+                    <a href="mailto:Hnm.cs.ai@outlook.com" class="contact-link">
+                        Hnm.cs.ai@outlook.com
+                    </a>
+                </p>
+            </div>
+
+            <div class="contact-card">
+                <h2 class="section-title"><i class="fab fa-linkedin"></i> LinkedIn</h2>
+                <p class="contact-info">
+                    <a href="https://www.linkedin.com/in/haq-nawaz-malik-70953a277" 
+                       target="_blank" 
+                       class="contact-link">
+                        Connect Professionally
+                    </a>
+                </p>
+            </div>
+
+            <div class="contact-card">
+                <h2 class="section-title"><i class="fab fa-github"></i> GitHub</h2>
+                <p class="contact-info">
+                    <a href="https://github.com/Haq-Nawaz-Malik" 
+                       target="_blank" 
+                       class="contact-link">
+                        Explore Projects
+                    </a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Social Links -->
+        <section class="social-links">
+            <a href="https://github.com/HAQ-NAWAZ-MALIK" target="_blank" class="social-icon">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://x.com/HAQ_NAWAZ_MALIK" target="_blank" class="social-icon">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://t.me/Haqwebbot" target="_blank" class="social-icon">
+                <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/haq-nawaz-malik-70953a277" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="copyright">Copyright ©2025 HNM. All rights reserved.</p>
+            <div class="legal-links">
+                <a href="privacy.html" class="legal-link">Privacy Policy</a>
+                <a href="terms.html" class="legal-link">Terms of Service</a>
+            </div>
+            <a class="next-page" href="overview/About.html">
+                <div class="page-info">
+                    <div class="context">Next</div>
+                    <div class="title">About</div>
+                </div>
+            </a>
+        </footer>
+    </main>
+
+   <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const sidebar = document.getElementById('sidebar');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside on mobile
+        document.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768 && 
+                !sidebar.contains(e.target) && 
+                !mobileMenuBtn.contains(e.target)) {
+                sidebar.classList.remove('active');
+            }
+        });
+
+        // Dark Mode Toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const icon = darkModeToggle.querySelector('i');
+
+        // Load saved theme
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'dark-mode') {
+            body.classList.add('dark-mode');
+            icon.classList.replace('fa-moon', 'fa-sun');
+        }
+
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                icon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'dark-mode');
+            } else {
+                icon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', '');
+            }
+        });
+
+        // Window resize handler
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                sidebar.classList.remove('active');
+            }
+        });
+    </script>
+    <!-- Same JavaScript as index.html -->
+    <script src="../script.js"></script>
+</body>
+</html>
