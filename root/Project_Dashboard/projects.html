@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Projects - HNM Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+    :root {
+        --primary: #2B3A4E;
+        --accent: #4A90E2;
+        --text: #333;
+        --background: #F8FAFB;
+        --section-bg: #FFF;
+        --accent-rgb: 74, 144, 226;
+        --text-rgb: 51, 51, 51;
+    }
+
+    body.dark-mode {
+        --primary: #f8f9fa;
+        --text: #e9ecef;
+        --background: #212529;
+        --accent: #4dabf7;
+        --section-bg: #343a40;
+    }
+
+
+    </style>
+</head>
+<body>
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle mobile menu">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Dark Mode Toggle -->
+    <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="transparent_graph.png" alt="Logo" class="brand-logo">
+            <h1 class="brand-title">HNM Dashboard</h1>
+        </div>
+
+        <nav class="menu-sections">
+            <div class="menu-section">
+                <h2 class="menu-title">Overview</h2>
+                <a href="../overview/About.html" class="menu-link"><i class="fas fa-info-circle"></i> About</a>
+                <a href="../overview/Activities.html" class="menu-link"><i class="fas fa-tasks"></i> Activities</a>
+                <a href="../overview/Skills.html" class="menu-link"><i class="fas fa-code"></i> Skills</a>
+                <a href="../overview/Research_&_Contribution.html" class="menu-link"><i class="fas fa-flask"></i> Research</a>
+                <a href="../overview/Certifications.html" class="menu-link"><i class="fas fa-certificate"></i> Certifications</a>
+            </div>
+
+            <div class="menu-section">
+                <h2 class="menu-title">Project Dashboard</h2>
+                <a href="../Project_Dashboard/Projects.html" class="menu-link active"><i class="fas fa-project-diagram"></i> Projects</a>
+                <a href="../Project_Dashboard/ideas.html" class="menu-link"><i class="fas fa-lightbulb"></i> Ideas</a>
+            </div>
+
+            <div class="menu-section">
+                <h2 class="menu-title">Connect</h2>
+                <a href="../Connect/Profiles.html" class="menu-link"><i class="fas fa-users"></i> Profiles</a>
+                <a href="../Connect/Contact.html" class="menu-link"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+        </nav>
+    </aside>
+
+    <main class="content">
+        <div class="projects-content">
+            <h1>Project Portfolio</h1>
+
+            <!-- 2025 Projects -->
+            <section class="year-section">
+                <h2 class="year-header">2025 (Coming Soon)</h2>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <h3 class="project-title">Next-Gen AI Projects</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">Generative AI</span>
+                            <span class="tech-tag">Real-time Systems</span>
+                        </div>
+                        <p class="project-description">
+                            Pioneering work in generative models and real-time AI solutions.
+                            Advanced techniques in multimodal AI systems.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- 2024 Projects -->
+            <section class="year-section">
+                <h2 class="year-header">2024 Highlights</h2>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <h3 class="project-title">Turkish TTS Fine-Tuning</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">Speech Synthesis</span>
+                            <span class="tech-tag">Multilingual AI</span>
+                            <span class="tech-tag">HuggingFace</span>
+                        </div>
+                        <p class="project-description">
+                            Customized Microsoft's SpeechT5 for Turkish language synthesis,
+                            demonstrating advanced multilingual speech capabilities.
+                        </p>
+                        <a href="https://github.com/HAQ-NAWAZ-MALIK/2024-Projects/tree/main/Turkish_TTS_FineTuning" 
+                           class="project-link" target="_blank">
+                            <i class="fas fa-code-branch"></i>
+                            View Project
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+                        <h3 class="project-title">BERT Sentiment Analysis</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Transformers</span>
+                            <span class="tech-tag">PyTorch</span>
+                        </div>
+                        <p class="project-description">
+                            Advanced sentiment classification system using BERT architecture
+                            for IMDB movie reviews analysis.
+                        </p>
+                        <a href="https://github.com/HAQ-NAWAZ-MALIK/Google-Colab-projects/tree/main/Training_BERT_To_Analyze_IMDB_Movie_Reviews" 
+                           class="project-link" target="_blank">
+                            <i class="fas fa-chart-bar"></i>
+                            Analyze Sentiments
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+                        <h3 class="project-title">Image Inpainting with Flux</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">Deep Learning</span>
+                            <span class="tech-tag">CNNs</span>
+                        </div>
+                        <p class="project-description">
+                            Advanced object removal and image completion using convolutional
+                            neural networks for seamless edits.
+                        </p>
+                        <a href="https://github.com/HAQ-NAWAZ-MALIK/2024-Projects/tree/main/Inpainting%20Using%20Flux" 
+                           class="project-link" target="_blank">
+                            <i class="fas fa-magic"></i>
+                            See Transformations
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <!-- 2023 Projects -->
+            <section class="year-section">
+                <h2 class="year-header">2023 Projects</h2>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <h3 class="project-title">Music Genre Classifier</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">Audio Processing</span>
+                            <span class="tech-tag">CNN</span>
+                            <span class="tech-tag">MFCC</span>
+                        </div>
+                        <p class="project-description">
+                            Deep learning model that classifies music genres using
+                            convolutional neural networks and audio feature extraction.
+                        </p>
+                        <a href="https://github.com/HAQ-NAWAZ-MALIK/Google-Colab-projects/tree/main/Music%20Genre%20Classifier%20via%20CNN" 
+                           class="project-link" target="_blank">
+                            <i class="fas fa-music"></i>
+                            Explore Classifier
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+                        <h3 class="project-title">Human Activity Recognition</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">Sensor Data</span>
+                            <span class="tech-tag">ML Models</span>
+                            <span class="tech-tag">Time Series</span>
+                        </div>
+                        <p class="project-description">
+                            Smartphone-based activity detection system using accelerometer
+                            and gyroscope data with machine learning.
+                        </p>
+                        <a href="https://github.com/HAQ-NAWAZ-MALIK/Google-Colab-projects/tree/main/human-activity-recognition" 
+                           class="project-link" target="_blank">
+                            <i class="fas fa-walking"></i>
+                            View Detection System
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Fun Projects Section -->
+            <section class="fun-projects">
+                <h2 class="year-header">Innovation Playground</h2>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <h3 class="project-title">LiveKit Voice Assistant</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">Real-time AI</span>
+                            <span class="tech-tag">Voice UI</span>
+                            <span class="tech-tag">WebRTC</span>
+                        </div>
+                        <p class="project-description">
+                            Interactive voice assistant integrating Deepgram STT,
+                            OpenAI GPT, and real-time voice processing.
+                        </p>
+                        <a href="https://github.com/HAQ-NAWAZ-MALIK/2024-Projects/tree/main/AI%20LiveKit%20Voice%20Assistant" 
+                           class="project-link" target="_blank">
+                            <i class="fas fa-robot"></i>
+                            Experience Demo
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+                        <h3 class="project-title">AI Math Solver</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">Gradio</span>
+                            <span class="tech-tag">Qwen2</span>
+                        </div>
+                        <p class="project-description">
+                            Web-based solution for mathematical problem solving
+                            through OCR and symbolic reasoning.
+                        </p>
+                        <a href="https://github.com/HAQ-NAWAZ-MALIK/2024-Projects/tree/main/MATH%20SOLVER%20with%20Gradio" 
+                           class="project-link" target="_blank">
+                            <i class="fas fa-calculator"></i>
+                            Solve Problems
+                        </a>
+                    </article>
+
+                    <!-- Additional fun projects can be added here following the same structure -->
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="social-links">
+                <a href="https://github.com/HAQ-NAWAZ-MALIK" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://x.com/HAQ_NAWAZ_MALIK" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://t.me/Haqwebbot" target="_blank" class="social-icon">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/haq-nawaz-malik-70953a277" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            
+            <p class="copyright">Copyright ©2025 HNM. All rights reserved.</p>
+            <div class="legal-links">
+                <a href="privacy.html" class="legal-link">Privacy Policy</a>
+                <a href="terms.html" class="legal-link">Terms of Service</a>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const sidebar = document.getElementById('sidebar');
+        mobileMenuBtn.addEventListener('click', () => sidebar.classList.toggle('active'));
+
+        // Dark Mode Toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const icon = darkModeToggle.querySelector('i');
+        
+        // Load saved theme
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'dark-mode') {
+            body.classList.add('dark-mode');
+            icon.classList.replace('fa-moon', 'fa-sun');
+        }
+
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                icon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'dark-mode');
+            } else {
+                icon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', '');
+            }
+        });
+
+        // Close menu when clicking outside on mobile
+        document.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768 && 
+                !sidebar.contains(e.target) && 
+                !mobileMenuBtn.contains(e.target)) {
+                sidebar.classList.remove('active');
+            }
+        });
+
+        // Window resize handler
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                sidebar.classList.remove('active');
+            }
+        });
+    });
+    </script>
+</body>
+</html>
