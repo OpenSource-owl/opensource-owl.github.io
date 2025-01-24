@@ -326,3 +326,146 @@
   padding-left: 1rem;
   border-left: 2px solid var(--accent);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Skills Content Styling */
+ .skills-content {
+    max-width: 880px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+}
+
+.skills-content h1 {
+    font-size: 2.2rem;
+    color: var(--primary);
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.skill-category {
+    background: var(--section-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.skill-category h2 {
+    color: var(--accent);
+    margin-bottom: 1.2rem;
+    font-size: 1.3rem;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-tag {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    background: rgba(var(--accent-rgb), 0.1);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: var(--text);
+    transition: all 0.2s ease;
+}
+
+.skill-tag::before {
+    content: '#';
+    color: var(--accent);
+    margin-right: 3px;
+}
+
+.skill-tag:hover {
+    background: rgba(var(--accent-rgb), 0.2);
+    transform: translateY(-1px);
+}
+
+.credly-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background: var(--accent);
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 1rem 0;
+    transition: all 0.2s ease;
+}
+
+.credly-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(var(--accent-rgb), 0.3);
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    border-top: 1px solid rgba(var(--text-rgb), 0.1);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    color: var(--text);
+    transition: color 0.2s ease;
+}
+
+.social-icon:hover {
+    color: var(--accent);
+}
+
+.copyright {
+    color: var(--text);
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+
+.legal-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.legal-link {
+    color: var(--text);
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .skills-content {
+        padding: 0 1rem;
+    }
+    
+    .skill-category {
+        padding: 1rem;
+    }
+}
