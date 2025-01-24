@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenSource-Owl | Modern AI Platform</title>
+    <style>
+        :root {
+            --primary: #2B3A4E;
+            --accent: #4A90E2;
+            --text: #333;
+            --background: #F9FAFB;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui;
+        }
+
+        body {
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .announcement-bar {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-size: 0.9em;
+        }
+
+        .hero-section {
+            padding: 8vh 5vw;
+            text-align: center;
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 300;
+            letter-spacing: -0.05em;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+
+        .dynamic-text {
+            font-size: clamp(1.1rem, 2vw, 1.3rem);
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            border: 1px solid var(--accent);
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--accent);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(74, 144, 226, 0.2);
+        }
+
+        .capabilities-section {
+            padding: 6vh 5vw;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            color: var(--primary);
+        }
+
+        .footer {
+            background: var(--primary);
+            color: white;
+            padding: 4rem 5vw;
+            margin-top: 8vh;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-column h3 {
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            padding: 0.5rem 0;
+            display: block;
+            transition: opacity 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                min-height: 60vh;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="announcement-bar">
+        OpenSource-Owl-R1: Leading open-source AI model now available
+    </div>
+
+    <section class="hero-section">
+        <h1 class="hero-title">OpenSource-Owl</h1>
+        <div class="dynamic-text" id="dynamicText">Intelligent simplicity for modern developers</div>
+        
+        <div class="cta-buttons">
+            <a href="#" class="btn btn-primary">Get Started</a>
+            <a href="#" class="btn btn-secondary">Documentation</a>
+        </div>
+    </section>
+
+    <section class="capabilities-section">
+        <h2 class="section-title">Core Capabilities</h2>
+        <p class="dynamic-text">
+            Experience unprecedented performance with our lightweight architecture, offering state-of-the-art results 
+            while maintaining exceptional energy efficiency across all platforms.
+        </p>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3>Research</h3>
+                <ul class="footer-links">
+                    <li><a href="#">OpenSource-Owl LLM</a></li>
+                    <li><a href="#">OpenSource-Owl Coder</a></li>
+                    <li><a href="#">OpenSource-Owl Math</a></li>
+                    <li><a href="#">OpenSource-Owl VL</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Products</h3>
+                <ul class="footer-links">
+                    <li><a href="#">AI Platform</a></li>
+                    <li><a href="#">API Pricing</a></li>
+                    <li><a href="#">Mobile App</a></li>
+                    <li><a href="#">Service Status</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Legal</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Dynamic text animation
+        const phrases = [
+            "Intelligent simplicity for modern developers",
+            "Open-source innovation unleashed",
+            "Ethical AI for everyone",
+            "Performance meets efficiency"
+        ];
+        
+        const textElement = document.getElementById('dynamicText');
+        let currentPhrase = 0;
+
+        function animateText() {
+            textElement.style.opacity = 0;
+            setTimeout(() => {
+                textElement.textContent = phrases[currentPhrase];
+                textElement.style.opacity = 1;
+                currentPhrase = (currentPhrase + 1) % phrases.length;
+            }, 600);
+        }
+
+        setInterval(animateText, 3000);
+    </script>
+</body>
+</html>
