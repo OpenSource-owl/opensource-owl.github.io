@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Ideas - HNM Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../_static/icon.png">
+    <style>
+    :root {
+        --primary: #2B3A4E;
+        --accent: #4A90E2;
+        --text: #333;
+        --background: #F8FAFB;
+        --section-bg: #FFF;
+        --accent-rgb: 74, 144, 226;
+        --text-rgb: 51, 51, 51;
+    }
+
+    body.dark-mode {
+        --primary: #f8f9fa;
+        --text: #e9ecef;
+        --background: #212529;
+        --accent: #4dabf7;
+        --section-bg: #343a40;
+    }
+
+   
+    </style>
+</head>
+<body>
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle mobile menu">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Dark Mode Toggle -->
+    <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="transparent_graph.png" alt="Logo" class="brand-logo">
+            <h1 class="brand-title">HNM Dashboard</h1>
+        </div>
+
+        <nav class="menu-sections">
+            <div class="menu-section">
+                <h2 class="menu-title">Overview</h2>
+                <a href="../overview/About.html" class="menu-link"><i class="fas fa-info-circle"></i> About</a>
+                <a href="../overview/Activities.html" class="menu-link"><i class="fas fa-tasks"></i> Activities</a>
+                <a href="../overview/Skills.html" class="menu-link"><i class="fas fa-code"></i> Skills</a>
+                <a href="../overview/Research_&_Contribution.html" class="menu-link"><i class="fas fa-flask"></i> Research</a>
+                <a href="../overview/Certifications.html" class="menu-link"><i class="fas fa-certificate"></i> Certifications</a>
+            </div>
+
+            <div class="menu-section">
+                <h2 class="menu-title">Project Dashboard</h2>
+                <a href="../Project_Dashboard/Projects.html" class="menu-link"><i class="fas fa-project-diagram"></i> Projects</a>
+                <a href="../Project_Dashboard/ideas.html" class="menu-link active"><i class="fas fa-lightbulb"></i> Ideas</a>
+            </div>
+
+            <div class="menu-section">
+                <h2 class="menu-title">Connect</h2>
+                <a href="../Connect/Profiles.html" class="menu-link"><i class="fas fa-users"></i> Profiles</a>
+                <a href="../Connect/Contact.html" class="menu-link"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+        </nav>
+    </aside>
+
+    <main class="content">
+        <div class="ideas-content">
+            <h1>Innovation Catalyst</h1>
+            
+            <div class="idea-grid">
+                <!-- Holographic Workspace -->
+                <article class="idea-card">
+                    <h2 class="idea-title">
+                        <i class="fas fa-vr-cardboard idea-icon"></i>
+                        Holographic Virtual Workspace
+                    </h2>
+                    <p class="idea-description">
+                        Immersive 3D collaboration environment with spatial computing and real-time object manipulation,
+                        enabling global teams to interact naturally in shared virtual spaces.
+                    </p>
+                    <div class="idea-tags">
+                        <span class="idea-tag">WebXR</span>
+                        <span class="idea-tag">Haptics</span>
+                        <span class="idea-tag">Cloud Rendering</span>
+                    </div>
+                </article>
+
+                <!-- Neural Enhancement -->
+                <article class="idea-card">
+                    <h2 class="idea-title">
+                        <i class="fas fa-brain idea-icon"></i>
+                        Neural Enhancement Interface
+                    </h2>
+                    <p class="idea-description">
+                        Non-invasive BCI augmenting human cognition through adaptive AI models,
+                        enabling direct neural control and enhanced sensory perception.
+                    </p>
+                    <div class="idea-tags">
+                        <span class="idea-tag">Neurotech</span>
+                        <span class="idea-tag">Edge AI</span>
+                        <span class="idea-tag">BCI</span>
+                    </div>
+                </article>
+
+                <!-- Urban Farming -->
+                <article class="idea-card">
+                    <h2 class="idea-title">
+                        <i class="fas fa-seedling idea-icon"></i>
+                        Autonomous Urban Farming
+                    </h2>
+                    <p class="idea-description">
+                        AI-managed vertical farms with robotic systems optimizing plant growth,
+                        nutrient distribution, and energy use for sustainable megacity food production.
+                    </p>
+                    <div class="idea-tags">
+                        <span class="idea-tag">Agritech</span>
+                        <span class="idea-tag">IoT</span>
+                        <span class="idea-tag">Computer Vision</span>
+                    </div>
+                </article>
+
+                <!-- Health Guardian -->
+                <article class="idea-card">
+                    <h2 class="idea-title">
+                        <i class="fas fa-heartbeat idea-icon"></i>
+                        Predictive Health Guardian
+                    </h2>
+                    <p class="idea-description">
+                        Wearable AI analyzing biometric data to predict health events
+                        and provide real-time recommendations through federated learning.
+                    </p>
+                    <div class="idea-tags">
+                        <span class="idea-tag">Digital Twin</span>
+                        <span class="idea-tag">BioML</span>
+                        <span class="idea-tag">Edge Computing</span>
+                    </div>
+                </article>
+
+                <!-- Smart City -->
+                <article class="idea-card">
+                    <h2 class="idea-title">
+                        <i class="fas fa-city idea-icon"></i>
+                        Smart City Neural Network
+                    </h2>
+                    <p class="idea-description">
+                        Distributed AI optimizing urban infrastructure through real-time analysis
+                        of traffic patterns, energy grids, and public service demands.
+                    </p>
+                    <div class="idea-tags">
+                        <span class="idea-tag">Digital Twin</span>
+                        <span class="idea-tag">IoT</span>
+                        <span class="idea-tag">Reinforcement Learning</span>
+                    </div>
+                </article>
+
+                <!-- AI Governance -->
+                <article class="idea-card">
+                    <h2 class="idea-title">
+                        <i class="fas fa-robot idea-icon"></i>
+                        Ethical AI Governance
+                    </h2>
+                    <p class="idea-description">
+                        Decentralized validation system ensuring AI decisions align with ethical guidelines
+                        through blockchain-verified accountability and transparent auditing.
+                    </p>
+                    <div class="idea-tags">
+                        <span class="idea-tag">AI Ethics</span>
+                        <span class="idea-tag">Blockchain</span>
+                        <span class="idea-tag">Explainable AI</span>
+                    </div>
+                </article>
+
+                <!-- Mental Health -->
+                <article class="idea-card">
+                    <h2 class="idea-title">
+                        <i class="fas fa-comment-medical idea-icon"></i>
+                        Empathic Mental Health Companion
+                    </h2>
+                    <p class="idea-description">
+                        Multimodal AI combining speech analysis and biometric monitoring
+                        to provide real-time mental health support and crisis intervention.
+                    </p>
+                    <div class="idea-tags">
+                        <span class="idea-tag">NLP</span>
+                        <span class="idea-tag">Affective Computing</span>
+                        <span class="idea-tag">Privacy AI</span>
+                    </div>
+                </article>
+
+                <!-- Quantum Biology -->
+                <article class="idea-card">
+                    <h2 class="idea-title">
+                        <i class="fas fa-dna idea-icon"></i>
+                        Quantum Protein Folding
+                    </h2>
+                    <p class="idea-description">
+                        Hybrid quantum-classical system accelerating drug discovery by simulating
+                        molecular interactions through quantum annealing.
+                    </p>
+                    <div class="idea-tags">
+                        <span class="idea-tag">Quantum ML</span>
+                        <span class="idea-tag">Bioinformatics</span>
+                        <span class="idea-tag">HPC</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="social-links">
+                <a href="https://github.com/HAQ-NAWAZ-MALIK" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://x.com/HAQ_NAWAZ_MALIK" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://t.me/Haqwebbot" target="_blank" class="social-icon">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/haq-nawaz-malik-70953a277" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <p class="copyright">Copyright ©2025 HNM. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const sidebar = document.getElementById('sidebar');
+        mobileMenuBtn.addEventListener('click', () => sidebar.classList.toggle('active'));
+
+        // Dark Mode Toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const icon = darkModeToggle.querySelector('i');
+        
+        // Load saved theme
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'dark-mode') {
+            body.classList.add('dark-mode');
+            icon.classList.replace('fa-moon', 'fa-sun');
+        }
+
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                icon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'dark-mode');
+            } else {
+                icon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', '');
+            }
+        });
+
+        // Close menu on outside click (mobile)
+        document.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768 && 
+                !sidebar.contains(e.target) && 
+                !mobileMenuBtn.contains(e.target)) {
+                sidebar.classList.remove('active');
+            }
+        });
+
+        // Window resize handler
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                sidebar.classList.remove('active');
+            }
+        });
+    });
+    </script>
+</body>
+</html>

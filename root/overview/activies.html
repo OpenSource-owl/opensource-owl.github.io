@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Activities - HNM Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../_static/icon.png">
+    <style>
+    :root {
+        --primary: #2B3A4E;
+        --accent: #4A90E2;
+        --text: #333;
+        --background: #F8FAFB;
+        --section-bg: #FFF;
+        --accent-rgb: 74, 144, 226;
+        --text-rgb: 51, 51, 51;
+    }
+
+    body.dark-mode {
+        --primary: #f8f9fa;
+        --text: #e9ecef;
+        --background: #212529;
+        --accent: #4dabf7;
+        --section-bg: #343a40;
+    }
+
+    
+    </style>
+</head>
+<body>
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle mobile menu">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Dark Mode Toggle -->
+    <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="transparent_graph.png" alt="Logo" class="brand-logo">
+            <h1 class="brand-title">HNM Dashboard</h1>
+        </div>
+
+        <nav class="menu-sections">
+            <div class="menu-section">
+                <h2 class="menu-title">Overview</h2>
+                <a href="../overview/About.html" class="menu-link"><i class="fas fa-info-circle"></i> About</a>
+                <a href="../overview/Activities.html" class="menu-link active"><i class="fas fa-tasks"></i> Activities</a>
+                <a href="../overview/Skills.html" class="menu-link"><i class="fas fa-code"></i> Skills</a>
+                <a href="../overview/Research_&_Contribution.html" class="menu-link"><i class="fas fa-flask"></i> Research</a>
+                <a href="../overview/Certifications.html" class="menu-link"><i class="fas fa-certificate"></i> Certifications</a>
+            </div>
+
+            <div class="menu-section">
+                <h2 class="menu-title">Project Dashboard</h2>
+                <a href="../Project_Dashboard/Projects.html" class="menu-link"><i class="fas fa-project-diagram"></i> Projects</a>
+                <a href="../Project_Dashboard/ideas.html" class="menu-link"><i class="fas fa-lightbulb"></i> Ideas</a>
+            </div>
+
+            <div class="menu-section">
+                <h2 class="menu-title">Connect</h2>
+                <a href="../Connect/Profiles.html" class="menu-link"><i class="fas fa-users"></i> Profiles</a>
+                <a href="../Connect/Contact.html" class="menu-link"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+        </nav>
+    </aside>
+
+    <main class="content">
+        <div class="activities-content">
+            <h1>Professional Activities</h1>
+            
+            <div class="activity-grid">
+                <!-- Recent News -->
+                <article class="activity-card">
+                    <div class="activity-header">
+                        <h2 class="activity-title">
+                            <i class="fas fa-blog activity-icon"></i>
+                            Weekly Tech Review
+                        </h2>
+                        <span class="activity-date">2024-03-20</span>
+                    </div>
+                    <p class="activity-details">
+                        Analyzed latest developments in quantum machine learning and attended NeurIPS workshop.
+                    </p>
+                    <div class="activity-tags">
+                        <span class="activity-tag">News</span>
+                        <span class="activity-tag">Learning</span>
+                    </div>
+                </article>
+
+                <!-- Conference Talk -->
+                <article class="activity-card highlight-card">
+                    <div class="activity-header">
+                        <h2 class="activity-title">
+                            <i class="fas fa-chalkboard-teacher activity-icon"></i>
+                            Guest Lecture
+                        </h2>
+                        <span class="activity-date">2024-03-19</span>
+                    </div>
+                    <p class="activity-details">
+                        Delivered lecture on "AI Ethics in Healthcare" at Stanford University.
+                    </p>
+                    <div class="activity-tags">
+                        <span class="activity-tag">Speaking</span>
+                        <span class="activity-tag">Education</span>
+                    </div>
+                </article>
+
+                <!-- Collaboration -->
+                <article class="activity-card">
+                    <div class="activity-header">
+                        <h2 class="activity-title">
+                            <i class="fas fa-users activity-icon"></i>
+                            Open Source Contribution
+                        </h2>
+                        <span class="activity-date">2024-03-18</span>
+                    </div>
+                    <p class="activity-details">
+                        Contributed to PyTorch Lightning core library, optimizing distributed training workflows.
+                    </p>
+                    <div class="activity-tags">
+                        <span class="activity-tag">Collaboration</span>
+                        <span class="activity-tag">Development</span>
+                    </div>
+                </article>
+
+                <!-- Certification -->
+                <article class="activity-card">
+                    <div class="activity-header">
+                        <h2 class="activity-title">
+                            <i class="fas fa-certificate activity-icon"></i>
+                            TensorFlow Certification
+                        </h2>
+                        <span class="activity-date">2024-03-17</span>
+                    </div>
+                    <p class="activity-details">
+                        Earned TensorFlow Developer Certificate with specialization in deployment.
+                    </p>
+                    <div class="activity-tags">
+                        <span class="activity-tag">Certification</span>
+                        <span class="activity-tag">MLOps</span>
+                    </div>
+                </article>
+
+                <!-- Publication -->
+                <article class="activity-card">
+                    <div class="activity-header">
+                        <h2 class="activity-title">
+                            <i class="fas fa-book-open activity-icon"></i>
+                            Paper Reviewed
+                        </h2>
+                        <span class="activity-date">2024-03-16</span>
+                    </div>
+                    <p class="activity-details">
+                        Reviewed "Transformers in Medical Imaging" for Nature Machine Intelligence.
+                    </p>
+                    <div class="activity-tags">
+                        <span class="activity-tag">Research</span>
+                        <span class="activity-tag">Peer Review</span>
+                    </div>
+                </article>
+
+                <!-- Award -->
+                <article class="activity-card highlight-card">
+                    <div class="activity-header">
+                        <h2 class="activity-title">
+                            <i class="fas fa-trophy activity-icon"></i>
+                            Innovation Award
+                        </h2>
+                        <span class="activity-date">2024-03-15</span>
+                    </div>
+                    <p class="activity-details">
+                        Received AI Innovation Award for sustainable agriculture project.
+                    </p>
+                    <div class="activity-tags">
+                        <span class="activity-tag">Award</span>
+                        <span class="activity-tag">Leadership</span>
+                    </div>
+                </article>
+
+                <!-- Volunteer -->
+                <article class="activity-card">
+                    <div class="activity-header">
+                        <h2 class="activity-title">
+                            <i class="fas fa-hand-holding-heart activity-icon"></i>
+                            Mentorship Program
+                        </h2>
+                        <span class="activity-date">2024-03-14</span>
+                    </div>
+                    <p class="activity-details">
+                        Mentored 5 students through AI4Good foundation's summer program.
+                    </p>
+                    <div class="activity-tags">
+                        <span class="activity-tag">Volunteer</span>
+                        <span class="activity-tag">Education</span>
+                    </div>
+                </article>
+
+                <!-- Learning -->
+                <article class="activity-card">
+                    <div class="activity-header">
+                        <h2 class="activity-title">
+                            <i class="fas fa-graduation-cap activity-icon"></i>
+                            Advanced NLP Course
+                        </h2>
+                        <span class="activity-date">2024-03-13</span>
+                    </div>
+                    <p class="activity-details">
+                        Completed Hugging Face Transformers course with focus on LLM fine-tuning.
+                    </p>
+                    <div class="activity-tags">
+                        <span class="activity-tag">Learning</span>
+                        <span class="activity-tag">NLP</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="social-links">
+                <a href="https://github.com/HAQ-NAWAZ-MALIK" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://x.com/HAQ_NAWAZ_MALIK" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://t.me/Haqwebbot" target="_blank" class="social-icon">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/haq-nawaz-malik-70953a277" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            
+            <p class="copyright">Copyright ©2025 HNM. All rights reserved.</p>
+            <div class="legal-links">
+                <a href="privacy.html" class="legal-link">Privacy Policy</a>
+                <a href="terms.html" class="legal-link">Terms of Service</a>
+            </div>
+        </footer>
+    </main>
+
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const sidebar = document.getElementById('sidebar');
+        mobileMenuBtn.addEventListener('click', () => sidebar.classList.toggle('active'));
+
+        // Dark Mode Toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const icon = darkModeToggle.querySelector('i');
+        
+        // Load saved theme
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'dark-mode') {
+            body.classList.add('dark-mode');
+            icon.classList.replace('fa-moon', 'fa-sun');
+        }
+
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                icon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'dark-mode');
+            } else {
+                icon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', '');
+            }
+        });
+
+        // Close menu on outside click (mobile)
+        document.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768 && 
+                !sidebar.contains(e.target) && 
+                !mobileMenuBtn.contains(e.target)) {
+                sidebar.classList.remove('active');
+            }
+        });
+
+        // Window resize handler
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                sidebar.classList.remove('active');
+            }
+        });
+    });
+    </script>
+</body>
+</html>
