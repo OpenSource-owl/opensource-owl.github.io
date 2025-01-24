@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About - HNM Dashboard</title>
+    <link rel="stylesheet" href="../styles.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../assets/favicon.ico">
+</head>
+<body>
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Dark Mode Toggle -->
+    <button class="dark-mode-toggle" id="darkModeToggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Sidebar Navigation -->
+       <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="https://haq-nawaz-malik.github.io/portfolio/transparent_graph.png" alt="HNM Logo" class="brand-logo">
+            <h1 class="brand-title">HNM Dashboard</h1>
+        </div>
+
+        <div class="sidebar-menu">
+            <div class="menu-section">
+                <h3 class="menu-title">Overview</h3>
+                <ul>
+                    <li><a href="overview/About.html" class="menu-link">About</a></li>
+                    <li><a href="overview/Activities.html" class="menu-link">Activities</a></li>
+                    <li><a href="overview/Skills.html" class="menu-link">Skills</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-section">
+                <h3 class="menu-title">Projects</h3>
+                <ul>
+                    <li><a href="Project_Dashboard/Projects.html" class="menu-link">Portfolio</a></li>
+                    <li><a href="Project_Dashboard/ideas.html" class="menu-link">Ideas</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-section">
+                <h3 class="menu-title">Connect</h3>
+                <ul>
+                    <li><a href="Connect/Profiles.html" class="menu-link">Profiles</a></li>
+                    <li><a href="Connect/Contact.html" class="menu-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="content">
+        <header class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">About Me</h1>
+                <p class="hero-subtitle">Computer Science Innovator & AI Enthusiast</p>
+            </div>
+        </header>
+
+        <section class="about-section">
+            <div class="profile-card">
+                <img src="https://avatars.githubusercontent.com/u/86514900?v=4" alt="Haq Nawaz Malik" class="profile-image">
+                <div class="profile-content">
+                    <h2 class="section-title">Who I Am</h2>
+                    <p class="section-text">
+                        Hi, I'm <strong>Haq Nawaz Malik</strong>, a dedicated Computer Science student from Kashmir, 
+                        currently affiliated with <a href="https://www.bits-pilani.ac.in/" target="_blank">BITS Pilani</a> 
+                        and other leading organizations. My passion lies in exploring AI and developing innovative 
+                        technology solutions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <h2 class="section-title">What I Do</h2>
+                <p class="section-text">
+                    Specializing in <strong>AI/ML</strong>, <strong>Computer Vision</strong>, and <strong>NLP</strong>, 
+                    I create practical solutions for real-world challenges. My work spans from developing machine learning 
+                    models to building full-stack systems, always pushing technological boundaries.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h2 class="section-title">Education & Affiliations</h2>
+                <p class="section-text">
+                    Pursuing Computer Science while collaborating with 
+                    <a href="https://developer.nvidia.com/" target="_blank">NVIDIA</a>, 
+                    <a href="https://cloud.google.com/" target="_blank">Google Cloud</a>, and 
+                    <a href="https://www.aspireleaders.org/" target="_blank">Aspire Leaders</a>. 
+                    These partnerships enhance my expertise in cutting-edge technologies.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h2 class="section-title">My Passions</h2>
+                <p class="section-text">
+                    I thrive on exploring emerging technologies, contributing to open-source projects, 
+                    and sharing knowledge through technical writing. Always seeking collaborative opportunities 
+                    to build impactful solutions.
+                </p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="social-links">
+                <a href="https://github.com/HAQ-NAWAZ-MALIK" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://x.com/HAQ_NAWAZ_MALIK" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://t.me/Hnm_ai" target="_blank" class="social-icon">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/haq-nawaz-malik-70953a277" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            
+            <p class="copyright">Copyright ©2025 HNM. All rights reserved.</p>
+            
+            <div class="page-navigation">
+                <a class="prev-page" href="../index.html">
+                    <div class="page-info">
+                        <div class="context">Previous</div>
+                        <div class="title">Home</div>
+                    </div>
+                </a>
+                <a class="next-page" href="Activities.html">
+                    <div class="page-info">
+                        <div class="context">Next</div>
+                        <div class="title">Activities</div>
+                    </div>
+                </a>
+            </div>
+        </footer>
+    </main>
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const sidebar = document.getElementById('sidebar');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside on mobile
+        document.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768 && 
+                !sidebar.contains(e.target) && 
+                !mobileMenuBtn.contains(e.target)) {
+                sidebar.classList.remove('active');
+            }
+        });
+
+        // Dark Mode Toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const icon = darkModeToggle.querySelector('i');
+
+        // Load saved theme
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'dark-mode') {
+            body.classList.add('dark-mode');
+            icon.classList.replace('fa-moon', 'fa-sun');
+        }
+
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                icon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'dark-mode');
+            } else {
+                icon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', '');
+            }
+        });
+
+        // Window resize handler
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                sidebar.classList.remove('active');
+            }
+        });
+    </script>
+    <script src="../script.js"></script>
+</body>
+</html>
