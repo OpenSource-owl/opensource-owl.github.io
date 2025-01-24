@@ -20,8 +20,6 @@
             --text: #e9ecef;
             --background: #212529;
             --accent: #4dabf7;
-            background: var(--background);
-            color: var(--text);
         }
 
         .dark-mode .sidebar {
@@ -46,31 +44,42 @@
             transform: rotate(20deg);
         }
 
-        .next-page {
-            display: inline-flex;
-            align-items: center;
-            margin-top: 1.5rem;
-            padding: 0.8rem 1.5rem;
-            text-decoration: none;
-            color: var(--accent);
-            border: 1px solid var(--accent);
-            border-radius: 6px;
-            transition: all 0.3s ease;
+        .mobile-menu-btn {
+            display: none;
+            position: fixed;
+            top: 1rem;
+            left: 1rem;
+            z-index: 1001;
+            background: transparent;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--text);
+            cursor: pointer;
         }
 
-        .next-page:hover {
-            background: var(--accent);
-            color: white;
-            transform: translateY(-2px);
+        @media (max-width: 768px) {
+            .mobile-menu-btn { display: block; }
+            .sidebar {
+                left: -100%;
+                transition: left 0.3s ease;
+            }
+            .sidebar.active { left: 0; }
         }
     </style>
 </head>
 <body>
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Dark Mode Toggle -->
     <button class="dark-mode-toggle" id="darkModeToggle">
         <i class="fas fa-moon"></i>
     </button>
 
-    <nav class="sidebar">
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
         <div class="sidebar-header">
             <img src="https://haq-nawaz-malik.github.io/portfolio/transparent_graph.png" alt="HNM Logo" class="brand-logo">
             <h1 class="brand-title">HNM Dashboard</h1>
@@ -104,6 +113,7 @@
         </div>
     </nav>
 
+    <!-- Main Content -->
     <main class="content">
         <header class="hero">
             <div class="hero-content">
@@ -114,6 +124,7 @@
             </div>
         </header>
 
+        <!-- Social Links -->
         <section class="social-links">
             <a href="https://github.com/HAQ-NAWAZ-MALIK" target="_blank" class="social-icon">
                 <i class="fab fa-github"></i>
@@ -129,6 +140,7 @@
             </a>
         </section>
 
+        <!-- Footer -->
         <footer class="footer">
             <p class="copyright">Copyright ©2025 HNM. All rights reserved.</p>
             <div class="legal-links">
@@ -137,9 +149,7 @@
             </div>
             <a class="next-page" href="overview/About.html">
                 <div class="page-info">
-                    <div class="context">
-                        <span>Next</span>
-                    </div>
+                    <div class="context">Next</div>
                     <div class="title">About</div>
                 </div>
             </a>
@@ -147,6 +157,23 @@
     </main>
 
     <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const sidebar = document.getElementById('sidebar');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside on mobile
+        document.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768 && 
+                !sidebar.contains(e.target) && 
+                !mobileMenuBtn.contains(e.target)) {
+                sidebar.classList.remove('active');
+            }
+        });
+
         // Dark Mode Toggle
         const darkModeToggle = document.getElementById('darkModeToggle');
         const body = document.body;
@@ -154,11 +181,9 @@
 
         // Load saved theme
         const currentTheme = localStorage.getItem('theme');
-        if (currentTheme) {
-            body.classList.add(currentTheme);
-            if (currentTheme === 'dark-mode') {
-                icon.classList.replace('fa-moon', 'fa-sun');
-            }
+        if (currentTheme === 'dark-mode') {
+            body.classList.add('dark-mode');
+            icon.classList.replace('fa-moon', 'fa-sun');
         }
 
         darkModeToggle.addEventListener('click', () => {
@@ -172,16 +197,12 @@
             }
         });
 
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
+        // Window resize handler
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                sidebar.classList.remove('active');
+            }
         });
     </script>
 </body>
 </html>
-
