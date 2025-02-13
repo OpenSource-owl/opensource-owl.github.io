@@ -239,7 +239,7 @@
         .template-card h3 {
             color: var(--accent);
             margin-bottom: 0.5rem;
-            font-size: 1.1rem;
+            font-size: 0.75rem;
         }
 
         .template-card p {
@@ -381,22 +381,116 @@
         .template-card:nth-child(2) { animation-delay: 0.1s; }
         .template-card:nth-child(3) { animation-delay: 0.2s; }
         .template-card:nth-child(4) { animation-delay: 0.3s; }
+      
+      
+      
+        /* Add these new styles to the existing CSS */
+        .sidebar-footer {
+            padding: 1.5rem;
+            border-top: 1px solid var(--border);
+            margin-top: auto;
+        }
+
+        .user-profile {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .user-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 500;
+        }
+
+        .user-details {
+            flex: 1;
+        }
+
+        .user-name {
+            font-weight: 500;
+            color: white;
+            margin-bottom: 0.25rem;
+        }
+
+        .logout-button {
+            background: none;
+            border: none;
+            color: rgba(255,255,255,0.7);
+            padding: 0;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .logout-button:hover {
+            color: white;
+        }
+
+        /* Dark mode adjustments */
+        [data-theme="dark"] .user-name {
+            color: var(--text);
+        }
+
+        [data-theme="dark"] .logout-button {
+            color: var(--text-secondary);
+        }
+
+        [data-theme="dark"] .logout-button:hover {
+            color: var(--text);
+        }
+
+        /* Mobile profile adjustments */
+        @media (max-width: 768px) {
+            .sidebar-footer {
+                padding: 1rem;
+            }
+            
+            .user-avatar {
+                width: 36px;
+                height: 36px;
+                font-size: 0.9rem;
+            }
+        }
+      
+      
     </style>
 </head>
 <body>
-    <div class="overlay"></div>
+   <body>
+    <!-- Modified Sidebar Section -->
     <div class="sidebar">
-        <a href="#" class="new-chat-button">
-            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
-            </svg>
-            New Chat
-        </a>
-        <div class="chat-history">
-            <a href="#" class="history-item">Writing assistant: Essay outline</a>
-            <a href="#" class="history-item">Code review: React component</a>
-            <a href="#" class="history-item">Data analysis: Sales trends</a>
-            <a href="#" class="history-item">Creative writing: Story ideas</a>
+        <div class="sidebar-content">
+            <a href="#" class="new-chat-button">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                </svg>
+                New Chat
+            </a>
+            <div class="chat-history">
+                <a href="#" class="history-item">Writing assistant: Essay outline</a>
+                <a href="#" class="history-item">Code review: React component</a>
+                <a href="#" class="history-item">Data analysis: Sales trends</a>
+                <a href="#" class="history-item">Creative writing: Story ideas</a>
+            </div>
+        </div>
+
+        <!-- User Profile Section -->
+        <div class="sidebar-footer">
+            <div class="user-profile">
+                <div class="user-avatar">JM</div>
+                <div class="user-details">
+                    <div class="user-name">John Maverick</div>
+                    <form action="/logout" method="POST">
+                        <button type="submit" class="logout-button">Sign out</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
     
